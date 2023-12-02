@@ -27,7 +27,7 @@
                     <label for="password">Contraseña</label>
                     <input type="password" name="password">
 
-                    <input type="submit" value="entrar">
+                    <input type="submit" name="submit" value="entrar">
                 </form>
             </div>
         </aside>
