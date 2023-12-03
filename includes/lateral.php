@@ -1,3 +1,4 @@
+<?php require_once 'includes/helpers.php'?>
 <div id="contenedor">
         <aside id="sidebar">
             <div id="login" class="bloque">
@@ -17,15 +18,20 @@
                 <form action="registro.php" method="POST">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre">
+                    <?php var_dump($_SESSION['errores'])?>
+                    <?php echo mostrarErrores($_SESSION['errores'], "nombre")?>
 
                     <label for="apellido">Apellido</label>
                     <input type="text" name="apellido">
+                    <?php echo mostrarErrores($_SESSION['errores'], "apellido")?>
 
                     <label for="email">Email</label>
                     <input type="email" name="email">
+                    <?php echo mostrarErrores($_SESSION['errores'], "email")?>
 
                     <label for="password">Contraseña</label>
                     <input type="password" name="password">
+                    <?php echo mostrarErrores($_SESSION['errores'], "password")?>
 
                     <input type="submit" name="submit" value="entrar">
                 </form>
