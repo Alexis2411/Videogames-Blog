@@ -5,8 +5,8 @@ require_once 'includes/lateral.php';
 ?>
 
 <div id="principal">
-    <h1>Crear Categorias</h1>
-    <p>Anade nuevas caategorias al blog para que los usuarios puedan leerlas y ver el contenido</p>
+    <h1>Crear Entradas</h1>
+    <p>Anade nuevas entradas al blog para que los usuarios puedan leerlas y ver el contenido</p>
     <br>
     <form action="guardar-entrada.php" method="POST">
         <label for="titulo">Titulo</label>

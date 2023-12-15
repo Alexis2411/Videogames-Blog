@@ -33,6 +33,4 @@ require_once 'includes/lateral.php';
         <input type="submit" name="submit" value="Actualizar">
     </form>
     <?php borrarErrores(); ?>
-
-
 </div>

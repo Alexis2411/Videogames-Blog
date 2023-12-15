@@ -2,14 +2,14 @@
     <?php include_once 'includes/cabecera.php';
     include_once 'includes/lateral.php';?>
     <div id="principal">
-        <h1>Ultimas entradas</h1>
+        <h1>Todas las entradas</h1>
         <?php
-            $entradas = conseguirEntradas($conexiondb, true, null);
+            $entradas = conseguirEntradas($conexiondb);
             if (!empty($entradas)):
                 while ($entrada = mysqli_fetch_assoc($entradas)):
         ?>
                     <article class="entrada">
-                        <a href="entrada.php?id=<?=$entrada['id']?>">
+                    <a href="entrada.php?id=<?=$entrada['id']?>">
                             <h2><?=$entrada['titulo']?></h2>
                             <span class="fecha"><?=$entrada['categoria']." | ".$entrada['fecha'] ?></span>
                             <p>
@@ -21,9 +21,7 @@
                 endwhile;
             endif;
         ?>
-        <div id="ver-todas">
-            <a href="entradas.php">Ver todas las entradas</a>
-        </div>
+        
         <div class="clearfix"></div>
     </div>
     </div>
