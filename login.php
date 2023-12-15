@@ -1,6 +1,5 @@
 <?php
     require_once 'includes/conexion.php';
-
     if (isset($_POST)){
         if (isset($_SESSION['error_login'])){
             session_unset($_SESSION['error_login']);
